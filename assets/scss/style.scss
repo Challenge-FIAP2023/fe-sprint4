@@ -1,0 +1,89 @@
+html{
+    body {
+        font-family: 'Open Sans', sans-serif;
+        overflow-x: hidden;
+
+        header {
+            .navbar {
+                &-brand {
+
+                }
+            }
+        }
+
+        section {
+            .hero {
+                img {
+                    width: 100vw;
+                    height: 80vh;
+                }
+    
+            }
+    
+            .sectionText {
+    
+                @extend %container-text-base;
+                    
+                .btn-home {
+                    border: 2px solid #6f9d3f;
+                    background-color: #6f9d3f;
+                    font-size: 24px;
+                    color: #fff;
+                    
+                    @extend %btn-home;
+                }
+    
+            }
+
+            .sectionCards {
+
+            }
+    
+            @extend %section-bg;
+
+        }
+        
+        footer {
+            
+        }
+
+
+    }
+
+    /* ------------ FIM DO BODY ------------  */
+}
+
+/* ------------ FIM DO HTML ------------  */
+
+
+
+%section-bg {
+    background-color: #e3f4d2;
+}
+
+%container-text-base {
+    h2 {
+        font-size: 46px;
+        font-weight: bolder;
+    }
+
+    .texto {
+        text-align: left;
+        line-height: 1.5;
+        margin-bottom: 80px;
+        font-size: 18px;
+    }
+}
+
+%btn-base {
+    padding: 10px 20px;
+    border-radius: 7px;
+    transition: .5s;
+    text-decoration: none;
+    cursor: pointer;
+    
+    &:hover {
+        background-color: transparent;
+        color: black;
+    }
+}

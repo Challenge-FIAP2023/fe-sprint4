@@ -1,0 +1,26 @@
+html body {
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+}
+html body .hero img {
+  width: 100vw;
+  height: 80vh;
+}
+html body .sectionText .container-text h2 {
+  font-size: 46px;
+  font-weight: bolder;
+}
+html body .sectionText .container-text p {
+  text-align: left;
+  line-height: 1.5;
+  margin-bottom: 80px;
+  font-size: 18px;
+}
+html body .sectionText .container-text .btn-home {
+  border: 2px solid #6f9d3f;
+  background-color: #6f9d3f;
+  font-size: 24px;
+  color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */
