@@ -1,3 +1,8 @@
+:root {
+    --cor-primaria: #35C45D;
+    --cor-secundaria: #fff;
+}
+
 html{
     body {
         font-family: 'Open Sans', sans-serif;
@@ -30,7 +35,7 @@ html{
                     font-size: 24px;
                     color: #fff;
                     
-                    @extend %btn-home;
+                    @extend %btn-home !optional;
                 }
     
             }
@@ -44,7 +49,23 @@ html{
         }
         
         footer {
-            
+            height: 80px;
+            width: 100%;
+            .footer__content {
+                width: 100%;
+                height: 100%;
+                background-color: var(--cor-primaria);
+                color: var(--cor-secundaria);
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                gap: 50px;
+                a {
+                    text-decoration: none;
+                    color: #175b2a;
+                }
+            }
         }
 
 
