@@ -1,7 +1,8 @@
 :root {
     --cor-primaria: #35C45D;
     --cor-secundaria: #fff;
-    --bg-color: rgb(203, 248, 214);
+    --bg-color-green: rgb(203, 248, 214);
+    --bg-color-gray: #F8F9FA;
 }
 
 html{
@@ -83,6 +84,8 @@ html{
                 @extend %btn-base;
             }
 
+            @extend %container-text-base;
+            @extend %bg-color-gray;
             @extend %section-base;
         }
         
@@ -127,7 +130,7 @@ html{
                 
             }
             
-            @extend %bg-color;
+            @extend %bg-color-green;
             @extend %section-base;
         }
 
@@ -139,6 +142,7 @@ html{
                 @extend %btn-base;
             }
 
+            @extend %bg-color-gray;
             @extend %section-base;
         }
 
@@ -199,18 +203,48 @@ html{
 
             }
             
-            @extend %bg-color;
+            @extend %bg-color-green;
             @extend %section-base;
         }
 
         /* ------------ Sobre ------------  */
         
         .sobre-section {
+            
+            .sobre-content{
+                display: flex;
+                flex-direction: row;
+                
+                .container-text {
+                    width: 60%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 30px;
+                    padding: 25px;
 
-            a {
-                @extend %btn-base;
+                    h2 {
+                        text-align: center;
+                    }
+                    
+                    a {
+                        @extend %btn-base;
+                    }
+                    
+                }
+
+                .container-logo {
+                    width: 40%;
+
+                    img {
+                        width: 100%;
+                    }
+                }
             }
-
+            
+            @extend %bg-color-gray;
+            @extend %container-text-base;
             @extend %section-base;
         }
 
@@ -255,8 +289,12 @@ html{
     align-items: center;
 }
 
-%bg-color {
-    background-color: var(--bg-color);
+%bg-color-green {
+    background-color: var(--bg-color-green);
+}
+
+%bg-color-gray {
+    background-color: var(--bg-color-gray);
 }
 
 %container-text-base {

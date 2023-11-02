@@ -1,7 +1,8 @@
 :root {
   --cor-primaria: #35C45D;
   --cor-secundaria: #fff;
-  --bg-color: rgb(203, 248, 214);
+  --bg-color-green: rgb(203, 248, 214);
+  --bg-color-gray: #F8F9FA;
 }
 
 html {
@@ -124,6 +125,28 @@ html body .cards-section .cards-container .feedback-container .feedback-text {
   font-size: 1rem;
   margin-top: 20px;
 }
+html body .sobre-section .sobre-content {
+  display: flex;
+  flex-direction: row;
+}
+html body .sobre-section .sobre-content .container-text {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 25px;
+}
+html body .sobre-section .sobre-content .container-text h2 {
+  text-align: center;
+}
+html body .sobre-section .sobre-content .container-logo {
+  width: 40%;
+}
+html body .sobre-section .sobre-content .container-logo img {
+  width: 100%;
+}
 html body footer {
   height: 80px;
   width: 100%;
@@ -156,19 +179,23 @@ html body .lixeira-section, html body .app-section, html body .coleta-section, h
 }
 
 html body .app-section, html body .cards-section {
-  background-color: var(--bg-color);
+  background-color: var(--bg-color-green);
 }
 
-html body .app-section .container-text h2 {
+html body .lixeira-section, html body .coleta-section, html body .sobre-section {
+  background-color: var(--bg-color-gray);
+}
+
+html body .lixeira-section h2, html body .app-section .container-text h2, html body .sobre-section h2 {
   font-size: 2.8rem;
   font-weight: bolder;
 }
-html body .app-section .container-text .texto {
+html body .lixeira-section .texto, html body .app-section .container-text .texto, html body .sobre-section .texto {
   line-height: 1.5;
   font-size: 1.1rem;
 }
 
-html body .hero .hero-content a, html body .lixeira-section a, html body .coleta-section a, html body .sobre-section a {
+html body .hero .hero-content a, html body .lixeira-section a, html body .coleta-section a, html body .sobre-section .sobre-content .container-text a {
   padding: 10px 20px;
   border-radius: 20px;
   transition: 0.5s;
@@ -180,7 +207,7 @@ html body .hero .hero-content a, html body .lixeira-section a, html body .coleta
   color: var(--cor-secundaria);
   font-size: 1.5rem;
 }
-html body .hero .hero-content a:hover, html body .lixeira-section a:hover, html body .coleta-section a:hover, html body .sobre-section a:hover {
+html body .hero .hero-content a:hover, html body .lixeira-section a:hover, html body .coleta-section a:hover, html body .sobre-section .sobre-content .container-text a:hover {
   background-color: transparent;
   color: var(--cor-primaria);
 }
