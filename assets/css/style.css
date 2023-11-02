@@ -1,30 +1,92 @@
 :root {
   --cor-primaria: #35C45D;
   --cor-secundaria: #fff;
+  --bg-color: rgb(203, 248, 214);
 }
 
 html {
+  scroll-behavior: smooth;
   /* ------------ FIM DO BODY ------------  */
+}
+html * {
+  padding: 0;
+  margin: 0;
 }
 html body {
   font-family: "Open Sans", sans-serif;
   overflow-x: hidden;
+  /* ------------ HEADER ------------  */
+  /* ------------ HERO ------------  */
+  /* ------------ Lixeira Inteligente ------------  */
+  /* ------------ Aplicativo ------------  */
+  /* ------------ Coleta Seletiva ------------  */
+  /* ------------ Feedbacks - Cards ------------  */
+  /* ------------ Sobre ------------  */
+  /* ------------ FOOTER ------------  */
 }
-html body section .hero img {
-  width: 100vw;
-  height: 80vh;
+html body section {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-html body section .sectionText .btn-home {
-  border: 2px solid #6f9d3f;
-  background-color: #6f9d3f;
-  font-size: 24px;
-  color: #fff;
+html body header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+html body header .navbar-brand {
+  color: var(--cor-primaria);
+  margin-right: 40px;
+  transition: 0.7s;
+}
+html body header .navbar-brand img {
+  margin-right: 10px;
+  height: 60px;
+}
+html body .hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(../img/hero.jpeg);
+  width: 100%;
+  height: calc(100vh - 86px);
+  color: var(--cor-secundaria);
+}
+html body .hero .hero-content {
+  padding: 0 8%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 44px;
+}
+html body .hero .hero-content h1 {
+  font-size: 6rem;
+}
+html body .hero .hero-content p {
+  font-size: 1.4rem;
+}
+html body .app-section .container-text {
+  text-align: center;
+  padding: 0 20%;
+}
+html body .app-section .container-text p {
+  margin: 40px 0 50px 0;
+}
+html body .app-section .container-img-app {
+  width: 100%;
+  border: 2px solid red;
+}
+html body .app-section .container-img-app img {
+  border: 6px solid #d4d4d4;
+  border-radius: 20px;
+  width: 280px;
+  box-shadow: 0 0 30px 0 #888888;
+  margin: 0 20px;
 }
 html body footer {
   height: 80px;
   width: 100%;
 }
-html body footer .footer__content {
+html body footer .footer-content {
   width: 100%;
   height: 100%;
   background-color: var(--cor-primaria);
@@ -35,25 +97,74 @@ html body footer .footer__content {
   justify-content: center;
   gap: 50px;
 }
-html body footer .footer__content a {
+html body footer .footer-content a {
   text-decoration: none;
   color: #175b2a;
 }
 
 /* ------------ FIM DO HTML ------------  */
-html body section {
-  background-color: #e3f4d2;
+html body .lixeira-section, html body .app-section, html body .coleta-section, html body .cards-section, html body .sobre-section {
+  width: 100%;
+  min-height: 70vh;
+  padding: 4% 12%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-html body section .sectionText h2 {
+html body .app-section, html body .cards-section {
+  background-color: var(--bg-color);
+}
+
+html body .app-section .container-text h2 {
   font-size: 46px;
   font-weight: bolder;
 }
-html body section .sectionText .texto {
-  text-align: left;
+html body .app-section .container-text .texto {
   line-height: 1.5;
-  margin-bottom: 80px;
   font-size: 18px;
+}
+
+html body .hero .hero-content a, html body .lixeira-section a, html body .coleta-section a, html body .sobre-section a {
+  padding: 10px 20px;
+  border-radius: 20px;
+  transition: 0.5s;
+  text-decoration: none;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  border: 2px solid var(--cor-primaria);
+  background-color: var(--cor-primaria);
+  color: var(--cor-secundaria);
+  font-size: 1.5rem;
+}
+html body .hero .hero-content a:hover, html body .lixeira-section a:hover, html body .coleta-section a:hover, html body .sobre-section a:hover {
+  background-color: transparent;
+  color: var(--cor-primaria);
+}
+
+html body .hero .hero-content p span, html body .app-section .container-text span {
+  font-weight: bold;
+  color: var(--cor-primaria);
+}
+
+@media (max-width: 990px) {
+  .hero {
+    display: flex;
+    justify-content: center;
+  }
+  .hero-content {
+    width: 80%;
+  }
+}
+@media (min-width: 991px) {
+  .hero {
+    display: flex;
+    justify-content: right;
+  }
+  .hero-content {
+    width: 60%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
