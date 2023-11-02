@@ -26,7 +26,7 @@
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <div class="container">
             
-            <a class="navbar-brand" href="#"><img src="./assets/img/logo-st-verde.png" alt="Logo Smart Trash">Smart Trash</a>
+            <a class="navbar-brand" href="#"><img src="./assets/img/logo-st-verde.png" alt="Logo Smart Trash">Smart Trash</a id="">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -88,9 +88,15 @@
         </p>
       </div>
       <div class="container-img-app">
-        <img src="./assets/img/app-home.jpg" alt="Aba Home do nosso aplicativo" class="img-fluid"/>
-        <img src="./assets/img/app-lixeiras.jpg" alt="Aba Lixeiras do nosso aplicativo">
-        <img src="./assets/img/app-ajuda.jpg" alt="Aba Ajuda do nosso aplicativo">
+        <div class="app-box">
+          <img src="./assets/img/app-home.jpg" alt="Aba Home do nosso aplicativo" class="img-fluid"/>
+        </div>
+        <div class="app-box">
+          <img src="./assets/img/app-lixeiras.jpg" alt="Aba Lixeiras do nosso aplicativo">
+        </div>
+        <div class="app-box">
+          <img src="./assets/img/app-ajuda.jpg" alt="Aba Ajuda do nosso aplicativo">
+        </div>
       </div>
     </section>
 
@@ -117,67 +123,58 @@
 
     <!-- Início Cards -->
     <section class="cards-section">
-      <h2>Feedbacks</h2>
-
-      <div class="row">
-        <div class="col-md-6">
-          <div class="card">
-            <div class="card-body">
-              <h2 class="card-title">Google</h2>
-              <p class="card-text">
-                Estamos maravilhados com os resultados incríveis alcançados pela implementação das lixeiras inteligentes da SmartTrash. Nossa empresa experimentou uma melhoria significativa na coleta seletiva e na taxa de reciclagem, superando todas as expectativas. Parabenizamos a SmartTrash por fornecer uma solução excepcionalmente eficaz.
-              </p>
-            </div>
+      <h2 class="cards-section-title">Feedbacks</h2>
+      
+      <div class="cards-container">
+        
+        <!-- Card 1 -->
+        <div class="feedback-container">
+          <div class="feedback-title">
+            <img src="./assets/img/logo-google.png" alt="Logo Google" id="google">
+            <h2 class="feedback-title">Google</h2>
           </div>
+          <p class="feedback-text">Estamos impressionados com os resultados surpreendentes da implementação das lixeiras inteligentes da SmartTrash. Nossa empresa viu uma grande melhoria na coleta seletiva e na taxa de reciclagem, superando todas as expectativas. Parabenizamos a SmartTrash por fornecer uma solução altamente eficaz.</p>
         </div>
-        <div class="col-md-6">
-          <div class="card">
-            <div class="card-body">
-              <h2 class="card-title">Nubank</h2>
-              <p class="card-text">
-                Temos o prazer de implementar as lixeiras inteligentes da SmartTrash em nossos escritórios. Essa solução inovadora facilita a coleta seletiva e aumenta a reciclagem, alinhando-se aos nossos valores de sustentabilidade e cuidado com o meio ambiente. Juntos, fazemos a diferença!
-                <br>
-                <br>
-              </p>
-            </div>
+        
+        <!-- Card 2 -->
+        <div class="feedback-container">
+          <div class="feedback-title">
+            <img src="./assets/img/logo-nubank.png" alt="Logo Nubank" id="nubank">
+            <h2 class="feedback-title">Nubank</h2>
           </div>
+          <p class="feedback-text">Temos o prazer de implementar as lixeiras inteligentes da SmartTrash em nossos escritórios. Essa solução inovadora facilita a coleta seletiva e aumenta a reciclagem, alinhando-se aos nossos valores de sustentabilidade e cuidado com o meio ambiente. Juntos, fazemos a diferença!</p>
         </div>
-      </div>
-      <div class="row mt-4">
-        <div class="col-md-6">
-          <div class="card">
-            <div class="card-body">
-              <h2 class="card-title">Instituto GEA</h2>
-              <p class="card-text">
-                Gostaria de expressar minha profunda gratidão e admiração pelo trabalho excepcional realizado em parceria com a empresa SmartTrash. A implementação dessa tecnologia revolucionária em algumas de nossas cidades-alvo tem mostrado resultados surpreendentes na facilitação da coleta seletiva e no aumento da reciclagem.
-              </p>
-            </div>
+        
+        <!-- Card 3 -->
+        <div class="feedback-container">
+          <div class="feedback-title">
+            <img src="./assets/img/logo-ibm.png" alt="Logo IBM" id="ibm">
+            <h2 class="feedback-title">IBM</h2>
           </div>
+          <p class="feedback-text">Expressamos nossa profunda gratidão e admiração pela excepcional parceria estabelecida com a SmartTrash. Sua tecnologia revolucionária tem impulsionado de maneira notável a coleta seletiva e a reciclagem em nossas cidades-alvo, proporcionando resultados surpreendentes.</p>
         </div>
-        <div class="col-md-6">
-          <div class="card">
-            <div class="card-body">
-              <h2 class="card-title">Greenpeace</h2>
-              <p class="card-text">
-                Agradecemos à SmartTrash pela lixeira inteligente que adquirimos. Sua tecnologia avançada e capacidade de separar automaticamente diferentes tipos de lixo têm impacto positivo em comunidades afetadas pelo problema ambiental. Recomendamos suas soluções para outras cidades enfrentando desafios semelhantes. Parabéns pelo trabalho excepcional!
-              </p>
-            </div>
+        
+        <!-- Card 4 -->
+        <div class="feedback-container">
+          <div class="feedback-title">
+            <img src="./assets/img/logo-starbucks.png" alt="Logo Starbucks" id="starbucks">
+            <h2 class="feedback-title">Starbucks</h2>
           </div>
+          <p class="feedback-text">Agradecemos à SmartTrash pela lixeira inteligente avançada, cuja tecnologia inovadora tem um impacto positivo notável em comunidades afetadas pelo problema ambiental. Recomendamos suas soluções eficazes para outras empresas e parabenizamos pelo trabalho excepcional.</p>
         </div>
+        
       </div>
       
     </section>
-
+    
     <!-- Fim Cards -->
-
+    
     <!-- Sobre Nós -->
     <section class="sobre-section" id="section6">
       <div class="container-text">
         <h2>Sobre Nós</h2>
-
-        <p class="texto">
-          A SmartTrash é uma empresa pioneira na gestão de resíduos, focada em lixeiras inteligentes e tecnologia de ponta para promover a coleta seletiva e a reciclagem. Seus valores centram-se na sustentabilidade, inovação e responsabilidade ambiental. A empresa acredita que práticas sustentáveis são cruciais para preservar o meio ambiente e construir um futuro mais limpo e saudável. Com soluções inovadoras, a SmartTrash busca elevar a conscientização ambiental, reduzir o impacto e promover um mundo mais sustentável, oferecendo produtos e serviços de alta qualidade para aprimorar a coleta seletiva e fomentar práticas responsáveis em relação aos resíduos.
-        </p>
+        
+        <p class="texto">A SmartTrash é uma empresa pioneira na gestão de resíduos, focada em lixeiras inteligentes e tecnologia de ponta para promover a coleta seletiva e a reciclagem. Seus valores centram-se na sustentabilidade, inovação e responsabilidade ambiental. A empresa acredita que práticas sustentáveis são cruciais para preservar o meio ambiente e construir um futuro mais limpo e saudável. Com soluções inovadoras, a SmartTrash busca elevar a conscientização ambiental, reduzir o impacto e promover um mundo mais sustentável, oferecendo produtos e serviços de alta qualidade para aprimorar a coleta seletiva e fomentar práticas responsáveis em relação aos resíduos.</p>
         <div>
           <a href="#">Saiba mais</a>
         </div>

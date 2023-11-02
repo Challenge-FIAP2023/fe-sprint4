@@ -10,6 +10,7 @@ html{
     * {
         padding: 0;
         margin: 0;
+        box-sizing: border-box;
     }
 
     body {
@@ -25,9 +26,6 @@ html{
         /* ------------ HEADER ------------  */
         
         header {
-            width: 100%;
-            display: flex;
-            justify-content: center;
             
             .navbar-brand {
                 color: var(--cor-primaria);
@@ -106,18 +104,26 @@ html{
             }
             
             .container-img-app {
-                width: 100%;
-                // display: grid;
+                max-width: 1200px;
+                display: grid;
+                padding: 2rem;
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
                 
                 border: 2px solid red;
                 
-                img {
-                    border: 6px solid #d4d4d4;
-                    border-radius: 20px;
-                    width: 280px;
-                    box-shadow: 0 0 30px 0 #888888;
-                    margin: 0 20px;
+                .app-box {  
+                    border: 2px solid green;
+
+                    padding: 15px 20px;
+
+                    img {
+                        border: 6px solid #d4d4d4;
+                        border-radius: 20px;
+                        width: 100%;
+                        box-shadow: 0 0 30px 0 #888888;
+                    }
                 }
+                
                 
             }
             
@@ -141,6 +147,57 @@ html{
         
         .cards-section {
 
+            &-title {
+                font-size: 2.8rem;
+                font-weight: bolder;
+            }
+            
+            .cards-container {
+                width: 100%;
+                display: grid;
+                padding: 2rem;
+                margin: auto;   
+                grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+                
+                .feedback-container {
+                    margin: 20px 20px;
+                    background-color: var(--cor-secundaria);
+                    padding: 40px;
+
+                    .feedback-title {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 10px;
+                        
+                        #nubank, #google {
+                            height: 40px;
+                        }
+                        
+                        #ibm {
+                            height: 30px;
+                        }
+                        
+                        #starbucks {
+                            height: 50px;
+                        }
+                        
+                        h2 {
+                            font-size: 2.4rem;
+                            text-align: center;
+                            margin: auto 0;
+                        }
+                    }
+                    
+                    .feedback-text {
+                        font-size: 1rem;
+                        margin-top: 20px
+                    
+                    }
+
+                }
+
+            }
             
             @extend %bg-color;
             @extend %section-base;
@@ -191,7 +248,7 @@ html{
 %section-base {
     width: 100%;
     min-height: 70vh;
-    padding: 4% 12%;
+    padding: 7% 12%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -204,13 +261,13 @@ html{
 
 %container-text-base {
     h2 {
-        font-size: 46px;
+        font-size: 2.8rem;
         font-weight: bolder;
     }
 
     .texto {
         line-height: 1.5;
-        font-size: 18px;
+        font-size: 1.1rem;
     }
 }
 
