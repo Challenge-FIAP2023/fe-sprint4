@@ -65,29 +65,70 @@ html body .hero .hero-content h1 {
 html body .hero .hero-content p {
   font-size: 1.4rem;
 }
+html body .lixeira-section .lixeira-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  gap: 25px;
+}
+html body .lixeira-section .lixeira-content .container-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 25px;
+}
+html body .lixeira-section .lixeira-content .container-text h2 {
+  text-align: center;
+}
+html body .lixeira-section .lixeira-content .container-img {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html body .lixeira-section .lixeira-content .container-img img {
+  max-height: 500px;
+}
 html body .app-section .container-text {
   text-align: center;
-  padding: 0 20%;
+  padding: 0 10%;
 }
 html body .app-section .container-text p {
   margin: 40px 0 50px 0;
 }
 html body .app-section .container-img-app {
-  max-width: 1200px;
-  display: grid;
+  width: 100%;
   padding: 2rem;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  border: 2px solid red;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 html body .app-section .container-img-app .app-box {
-  border: 2px solid green;
-  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--bg-color-gray);
+  margin: 10px;
+  padding: 25px 40px;
+  border-radius: 20px;
+}
+html body .app-section .container-img-app .app-box h3 {
+  font-size: 2.5rem;
+  font-family: var(--fonte-titulo);
+  text-align: center;
+  margin-bottom: 26px;
 }
 html body .app-section .container-img-app .app-box img {
-  border: 6px solid #d4d4d4;
+  border: 6px solid #797676;
   border-radius: 20px;
   width: 100%;
-  box-shadow: 0 0 30px 0 #888888;
+  box-shadow: 0 10px 20px 0 #b5b3b3;
+  transition: 0.5s;
+}
+html body .app-section .container-img-app .app-box img:hover {
+  box-shadow: 0 0 20px 0 #2b8a40;
+  transform: scale(1.05);
 }
 html body .coleta-section {
   min-height: 90vh;
@@ -122,7 +163,6 @@ html body .coleta-section .coleta-content .container-text {
 }
 html body .coleta-section .coleta-content .container-text h2 {
   text-align: center;
-  color: var(--cor-primaria);
 }
 html body .cards-section-title {
   font-size: 4rem;
@@ -239,12 +279,12 @@ html body .lixeira-section, html body .coleta-section, html body .sobre-section 
   background-color: var(--bg-color-gray);
 }
 
-html body .lixeira-section h2, html body .app-section .container-text h2, html body .coleta-section h2, html body .sobre-section h2 {
+html body .lixeira-section .lixeira-content h2, html body .app-section .container-text h2, html body .coleta-section h2, html body .sobre-section h2 {
   font-size: 4rem;
   font-weight: bolder;
   font-family: var(--fonte-titulo);
 }
-html body .lixeira-section .texto, html body .app-section .container-text .texto, html body .coleta-section .texto, html body .sobre-section .texto {
+html body .lixeira-section .lixeira-content .texto, html body .app-section .container-text .texto, html body .coleta-section .texto, html body .sobre-section .texto {
   line-height: 1.5;
   font-size: 1.1rem;
 }
