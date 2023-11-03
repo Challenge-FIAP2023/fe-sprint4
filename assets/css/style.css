@@ -44,7 +44,7 @@ html body header .navbar-brand img {
   height: 60px;
 }
 html body .hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(../img/hero.jpeg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)), url(../img/hero.jpeg);
   width: 100%;
   height: calc(100vh - 86px);
   color: var(--cor-secundaria);
@@ -241,23 +241,33 @@ html body .sobre-section .sobre-content .container-imagem .logo-img {
   max-height: 500px;
 }
 html body footer {
-  height: 80px;
+  height: 100px;
   width: 100%;
+  background-color: var(--cor-primaria);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 html body footer .footer-content {
-  width: 100%;
-  height: 100%;
-  background-color: var(--cor-primaria);
   color: var(--cor-secundaria);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  width: 70%;
+}
+html body footer .footer-content div {
+  width: 100%;
+  text-align: center;
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 50px;
 }
-html body footer .footer-content a {
+html body footer .footer-content div a {
   text-decoration: none;
-  color: #175b2a;
+  color: #165c2b;
+  transition: 0.5s;
+}
+html body footer .footer-content div a:hover {
+  color: black;
 }
 
 /* ------------ FIM DO HTML ------------  */
