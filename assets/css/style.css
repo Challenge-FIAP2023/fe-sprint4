@@ -3,6 +3,7 @@
   --cor-secundaria: #fff;
   --bg-color-green: rgb(203, 248, 214);
   --bg-color-gray: #F8F9FA;
+  --fonte-titulo: "Bebas Neue", sans-serif;
 }
 
 html {
@@ -85,27 +86,72 @@ html body .app-section .container-img-app .app-box img {
   width: 100%;
   box-shadow: 0 0 30px 0 #888888;
 }
+html body .coleta-section {
+  min-height: 90vh;
+}
+html body .coleta-section .coleta-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  background-color: var(--cor-secundaria);
+  gap: 50px;
+  border-radius: 26px;
+  padding: 20px 20px;
+}
+html body .coleta-section .coleta-content .coleta-img {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html body .coleta-section .coleta-content .coleta-img img {
+  border-radius: 16px;
+  max-width: 100%;
+  max-height: 90%;
+}
+html body .coleta-section .coleta-content .container-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 25px;
+}
+html body .coleta-section .coleta-content .container-text h2 {
+  text-align: center;
+  color: var(--cor-primaria);
+}
 html body .cards-section-title {
-  font-size: 2.8rem;
+  font-size: 4rem;
   font-weight: bolder;
+  margin-bottom: 40px;
+  font-family: "Bebas Neue", sans-serif;
 }
 html body .cards-section .cards-container {
   width: 100%;
   display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   padding: 2rem;
   margin: auto;
-  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  gap: 56px;
 }
 html body .cards-section .cards-container .feedback-container {
-  margin: 20px 20px;
   background-color: var(--cor-secundaria);
+  border-radius: 26px;
   padding: 40px;
+  box-shadow: 0 0 30px 0 #b5b3b3;
+  transition: 0.5s;
+}
+html body .cards-section .cards-container .feedback-container:hover {
+  cursor: pointer;
+  transform: scale(1.15);
+  box-shadow: 0 0 30px 0 #2b8a40;
 }
 html body .cards-section .cards-container .feedback-container .feedback-title {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 30px;
 }
 html body .cards-section .cards-container .feedback-container .feedback-title #nubank, html body .cards-section .cards-container .feedback-container .feedback-title #google {
   height: 40px;
@@ -126,11 +172,12 @@ html body .cards-section .cards-container .feedback-container .feedback-text {
   margin-top: 20px;
 }
 html body .sobre-section .sobre-content {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  gap: 25px;
 }
 html body .sobre-section .sobre-content .container-text {
-  width: 60%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -141,11 +188,14 @@ html body .sobre-section .sobre-content .container-text {
 html body .sobre-section .sobre-content .container-text h2 {
   text-align: center;
 }
-html body .sobre-section .sobre-content .container-logo {
-  width: 40%;
-}
-html body .sobre-section .sobre-content .container-logo img {
+html body .sobre-section .sobre-content .container-imagem {
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html body .sobre-section .sobre-content .container-imagem .logo-img {
+  max-height: 500px;
 }
 html body footer {
   height: 80px;
@@ -186,16 +236,17 @@ html body .lixeira-section, html body .coleta-section, html body .sobre-section 
   background-color: var(--bg-color-gray);
 }
 
-html body .lixeira-section h2, html body .app-section .container-text h2, html body .sobre-section h2 {
-  font-size: 2.8rem;
+html body .lixeira-section h2, html body .app-section .container-text h2, html body .coleta-section h2, html body .sobre-section h2 {
+  font-size: 4rem;
   font-weight: bolder;
+  font-family: var(--fonte-titulo);
 }
-html body .lixeira-section .texto, html body .app-section .container-text .texto, html body .sobre-section .texto {
+html body .lixeira-section .texto, html body .app-section .container-text .texto, html body .coleta-section .texto, html body .sobre-section .texto {
   line-height: 1.5;
   font-size: 1.1rem;
 }
 
-html body .hero .hero-content a, html body .lixeira-section a, html body .coleta-section a, html body .sobre-section .sobre-content .container-text a {
+html body .hero .hero-content a, html body .lixeira-section a, html body .coleta-section .coleta-content a, html body .sobre-section .sobre-content .container-text a {
   padding: 10px 20px;
   border-radius: 20px;
   transition: 0.5s;
@@ -207,7 +258,7 @@ html body .hero .hero-content a, html body .lixeira-section a, html body .coleta
   color: var(--cor-secundaria);
   font-size: 1.5rem;
 }
-html body .hero .hero-content a:hover, html body .lixeira-section a:hover, html body .coleta-section a:hover, html body .sobre-section .sobre-content .container-text a:hover {
+html body .hero .hero-content a:hover, html body .lixeira-section a:hover, html body .coleta-section .coleta-content a:hover, html body .sobre-section .sobre-content .container-text a:hover {
   background-color: transparent;
   color: var(--cor-primaria);
 }
