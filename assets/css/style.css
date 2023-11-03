@@ -36,6 +36,8 @@ html body header .navbar-brand {
   color: var(--cor-primaria);
   margin-right: 40px;
   transition: 0.7s;
+  font-family: var(--fonte-titulo);
+  font-size: 2rem;
 }
 html body header .navbar-brand img {
   margin-right: 10px;
@@ -54,10 +56,11 @@ html body .hero .hero-content {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  gap: 44px;
+  gap: 36px;
 }
 html body .hero .hero-content h1 {
-  font-size: 6rem;
+  font-size: 8rem;
+  font-family: var(--fonte-titulo);
 }
 html body .hero .hero-content p {
   font-size: 1.4rem;
@@ -125,7 +128,7 @@ html body .cards-section-title {
   font-size: 4rem;
   font-weight: bolder;
   margin-bottom: 40px;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: var(--fonte-titulo);
 }
 html body .cards-section .cards-container {
   width: 100%;

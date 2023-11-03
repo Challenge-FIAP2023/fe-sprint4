@@ -33,6 +33,8 @@ html{
                 color: var(--cor-primaria);
                 margin-right: 40px;
                 transition: .7s;
+                font-family: var(--fonte-titulo);
+                font-size: 2rem;
                 
                 img {
                     margin-right: 10px;
@@ -58,10 +60,11 @@ html{
                 flex-direction: column;
                 justify-content: center;
                 text-align: center;
-                gap: 44px;
+                gap: 36px;
                 
                 h1 {
-                    font-size: 6rem;
+                    font-size: 8rem;
+                    font-family: var(--fonte-titulo);
                 }
                 
                 p {
@@ -198,7 +201,7 @@ html{
                 font-size: 4rem;
                 font-weight: bolder;
                 margin-bottom: 40px;
-                font-family: 'Bebas Neue', sans-serif;
+                font-family: var(--fonte-titulo);
             }
             
             .cards-container {
