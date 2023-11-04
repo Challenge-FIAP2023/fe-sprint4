@@ -44,6 +44,67 @@ html body header .navbar-brand img {
   margin-right: 10px;
   height: 60px;
 }
+html body .modal-body .btn-close {
+  position: absolute;
+  right: 3%;
+}
+html body .modal-body .form-container {
+  width: 100%;
+  height: 500px;
+}
+html body .modal-body .form-container form {
+  width: 100%;
+  height: 100%;
+  padding: 5% 7%;
+}
+html body .modal-body .form-container form fieldset {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+html body .modal-body .form-container form fieldset .form-header {
+  width: 100%;
+  text-align: center;
+}
+html body .modal-body .form-container form fieldset .form-header .form-tittle {
+  height: 100%;
+  margin: 0 auto;
+  font-family: var(--fonte-titulo);
+  font-size: 4rem;
+}
+html body .modal-body .form-container form fieldset .input-group {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+html body .modal-body .form-container form fieldset .input-group .input-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+html body .modal-body .form-container form fieldset .input-group .input-box label {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+html body .modal-body .form-container form fieldset .input-group .input-box input {
+  padding: 8px;
+  border: 0px;
+  border-bottom: 1px solid black;
+  font-size: 1.2rem;
+}
+html body .modal-body .form-container form fieldset .input-group .btn-box {
+  width: 100%;
+}
+html body .modal-body .form-container form fieldset .input-group .btn-box .btn-login {
+  border-radius: 10px;
+}
 html body .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../img/hero.jpeg);
   width: 100%;
@@ -305,16 +366,35 @@ html body .hero .hero-content a, html body .lixeira-section a, html body .coleta
   border-radius: 20px;
   transition: 0.5s;
   text-decoration: none;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border: 2px solid var(--cor-primaria);
+  background-color: var(--cor-primaria);
+  color: var(--cor-secundaria);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+html body .hero .hero-content a:hover, html body .lixeira-section a:hover, html body .coleta-section .coleta-content a:hover, html body .sobre-section .sobre-content .container-text a:hover {
+  background-color: transparent;
+  color: var(--cor-primaria);
+}
+
+html body .modal-body .form-container form fieldset .input-group .btn-box .btn-login {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px 20px;
   letter-spacing: 1.5px;
   cursor: pointer;
   border: 2px solid var(--cor-primaria);
   background-color: var(--cor-primaria);
   color: var(--cor-secundaria);
   font-size: 1.5rem;
+  font-weight: bold;
+  transition: 0.5s;
 }
-html body .hero .hero-content a:hover, html body .lixeira-section a:hover, html body .coleta-section .coleta-content a:hover, html body .sobre-section .sobre-content .container-text a:hover {
-  background-color: transparent;
-  color: var(--cor-primaria);
+html body .modal-body .form-container form fieldset .input-group .btn-box .btn-login:hover {
+  background-color: #1d6e34;
+  border-color: #1d6e34;
 }
 
 html body .hero .hero-content p span, html body .app-section .container-text span {
