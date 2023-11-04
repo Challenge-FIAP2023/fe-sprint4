@@ -117,6 +117,13 @@ html body .modal-body .form-container form fieldset .input-group .btn-box {
 html body .modal-body .form-container form fieldset .input-group .btn-box .btn-login {
   border-radius: 10px;
 }
+html body .modal-body .form-container form fieldset .input-group .sign-up-box {
+  font-size: 1.2rem;
+}
+html body .modal-body .form-container form fieldset .input-group .sign-up-box a {
+  text-decoration: none;
+  margin-left: 6px;
+}
 html body .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../img/hero.jpeg);
   width: 100%;
