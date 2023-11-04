@@ -47,6 +47,7 @@ html body header .navbar-brand img {
 html body header .btn-drop-down {
   padding: 0;
   transition: 0.7s;
+  margin-right: 85px;
 }
 html body header .btn-drop-down .dropdown-item {
   transition: 0.7s;
