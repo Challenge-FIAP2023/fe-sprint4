@@ -44,6 +44,17 @@ html body header .navbar-brand img {
   margin-right: 10px;
   height: 60px;
 }
+html body header .btn-drop-down {
+  padding: 0;
+  transition: 0.7s;
+}
+html body header .btn-drop-down .dropdown-item {
+  transition: 0.7s;
+  padding: 10px 15px;
+}
+html body header .btn-drop-down .dropdown-item:hover {
+  background-color: rgb(174, 245, 174);
+}
 html body .modal-body .btn-close {
   position: absolute;
   right: 3%;

@@ -28,6 +28,7 @@ html{
         /* ------------ HEADER ------------  */
         
         header {
+
             
             .navbar-brand {
                 color: var(--cor-primaria);
@@ -40,9 +41,22 @@ html{
                     margin-right: 10px;
                     height: 60px;
                 }
-    
+                
             }
+            
+            .btn-drop-down {
+                padding: 0;
+                transition: .7s;
 
+                .dropdown-item {
+                    transition: .7s;
+                    padding: 10px 15px;
+
+                    &:hover {
+                        background-color: rgb(174, 245, 174);
+                    }
+                }
+            }
         }
         
         /* ------------ MODAL ------------  */
