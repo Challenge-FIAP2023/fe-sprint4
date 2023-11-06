@@ -217,7 +217,8 @@ html body .coleta-section {
 html body .coleta-section .coleta-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-  background-color: var(--cor-secundaria);
+  box-shadow: 0 0 30px 0 #b5b3b3;
+  background-color: #fff;
   gap: 50px;
   border-radius: 26px;
   padding: 20px 20px;
